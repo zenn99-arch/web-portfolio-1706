@@ -71,6 +71,12 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 /* line 35, node_modules/bootstrap/scss/_reboot.scss */
@@ -88,6 +94,7 @@ body {
   color: #FFFEDF;
   text-align: left;
   background-color: #2B2C31;
+  
 }
 
 /* line 62, node_modules/bootstrap/scss/_reboot.scss */
@@ -1358,6 +1365,7 @@ pre code {
         -ms-flex: 0 0 91.66667%;
             flex: 0 0 91.66667%;
     max-width: 91.66667%;
+    
   }
   /* line 43, node_modules/bootstrap/scss/mixins/_grid-framework.scss */
   .col-md-12 {
@@ -12670,6 +12678,7 @@ Responsive font styles
   /* line 41, src/assets/scss/base/_typography.scss */
   .display-3 {
     font-size: calc(1.575rem + 3.9vw);
+    position: absolute;
   }
   /* line 44, src/assets/scss/base/_typography.scss */
   .display-4 {
@@ -12765,8 +12774,8 @@ footer a {
 
 /* line 7, src/assets/scss/pages/_theme.scss */
 .intro {
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 205px;
+  padding-bottom: 250px;
 }
 
 /* Portfolio */
@@ -12907,4 +12916,291 @@ footer a {
   margin-bottom: 60px;
 }
 
+
+.skillset {
+  max-width: 960px;
+	width: 100%;
+	/* margin: 20px; */
+	margin-top: 100px;
+  align-items: center;
+  left:30px;
+  
+}
+
+.skill-lockup {
+	max-width: 450px;
+	width: 100%;
+	float: left;
+	margin-right: 40px;
+}
+
+.mr {
+	margin-right: 0;
+}
+
+.mb {
+	margin-bottom: 5px;
+}
+
+.skill-info {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.skill-name {
+	float: left;
+	color: #666;
+}
+
+.skill-status {
+	float: right;
+	color: #FFFEDF;
+	font-size: .8em;
+}
+.skill-bar {
+	display: block;
+	max-width: 450px;
+	width: 100%;
+	height: 5px;
+	background: #FFFEDF;
+	clear: both;
+	margin: 20px 0;
+}
+
+.skill-level {
+	display: table;
+	height: 5px;
+}
+.communication, .planning,
+.learning, .programming,
+.visual-design, .ux-design,.visual-design1, .ux-design1 {
+	background: #CF9C2C;
+}
+
+.communication {
+	width: 85%;
+	-webkit-animation: communication 8s linear;
+	animation: communication 8s linear;
+}
+
+.planning {
+	width: 90%;
+	-webkit-animation: planning 8s linear;
+	animation: planning 8s linear;
+}
+
+.learning {
+	width: 80%;
+	-webkit-animation: learning 8s linear;
+	animation: learning 8s linear;
+}
+
+.programming {
+	width: 75%;
+	-webkit-animation: programming 8s linear;
+	animation: programming 8s linear;
+}
+
+.visual-design {
+	width: 80%;
+	-webkit-animation: visual-design 8s linear;
+	animation: visual-design 8s linear;
+}
+
+.ux-design {
+	width: 70%;
+	-webkit-animation: ux-design 8s linear;
+	animation: ux-design 8s linear;
+}
+
+.visual-design1 {
+	width: 85%;
+	-webkit-animation: visual-design1 8s linear;
+	animation: visual-design1 8s linear;
+}
+
+.ux-design1 {
+	width: 75%;
+	-webkit-animation: ux-design1 8s linear;
+	animation: ux-design1 8s linear;
+}
+
+
+/*-----------------------
+	  	Animations 
+-------------------------*/ 
+@-webkit-keyframes communication {
+	from { width: 0%; }
+	to { width: 40%; }
+}
+
+@keyframes communication {
+	from { width: 0%; }
+	to { width: 40%; }
+}
+
+/*-----------------------
+	Planning Animation 
+-------------------------*/
+@-webkit-keyframes planning {
+	from { width: 0%; }
+	to { width: 15%; }
+}
+
+@keyframes planning {
+	from { width: 0%; }
+	to { width: 15%; }
+}
+
+/*-----------------------
+	Learning Animation 
+-------------------------*/ 
+@-webkit-keyframes learning {
+	from { width: 0%; }
+	to { width: 45%; }
+}
+
+@keyframes learning {
+	from { width: 0%; }
+	to { width: 45%; }
+}
+
+/*-----------------------
+  Programming Animation 
+-------------------------*/ 
+@-webkit-keyframes programming {
+	from { width: 0%; }
+	to { width: 30%; }
+}
+
+@keyframes programming {
+	from { width: 0%; }
+	to { width: 30%; }
+}
+
+/*-----------------------
+Visual-Design Animation  
+-------------------------*/ 
+@-webkit-keyframes visual-design {
+	from { width: 0%; }
+	to { width: 20%; }
+}
+
+@keyframes visual-design {
+	from { width: 0%; }
+	to { width: 20%; }
+}
+
+/*-----------------------
+   UX-Design Animation  
+-------------------------*/ 
+@-webkit-keyframes ux-design {
+	from { width: 0%; }
+	to { width: 10%; }
+}
+
+@keyframes ux-design {
+	from { width: 0%; }
+	to { width: 10%; }
+}
+
+@-webkit-keyframes visual-design1 {
+	from { width: 0%; }
+	to { width: 20%; }
+}
+
+@keyframes visual-design1 {
+	from { width: 0%; }
+	to { width: 20%; }
+}
+
+/*-----------------------
+   UX-Design Animation  
+-------------------------*/ 
+@-webkit-keyframes ux-design1 {
+	from { width: 0%; }
+	to { width: 10%; }
+}
+
+@keyframes ux-design1 {
+	from { width: 0%; }
+	to { width: 10%; }
+}
+
+/*-----------------------
+	  Media queries
+-------------------------*/ 
+
+
+@media screen and (max-width: 955px) {
+	.skillset {
+		padding: 20px;
+	}
+	.skill-lockup {
+		max-width: 700px;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.skill-bar {
+		max-width: 700px;
+		width: 100%;
+	}
+}
+
+
+  .intro2  {
+    padding-top: 260px;
+    padding-bottom: 250px;
+    padding-left: 300px;
+    
+    align-items: center;
+  }
+
+
+  .skills{
+    padding-left: 407px;
+    
+    align-items: center;
+  }
+
+
+  .title{
+    font-weight: 800;
+    color: transparent;
+    font-size:120px;
+    background: url("https://images.unsplash.com/photo-1548504769-900b70ed122e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80.jpg") repeat;
+    background-position: 10% 50%;
+    -webkit-background-clip: text;
+    position:relative;
+    margin: 24px, 24px,24px, 0px;
+    line-height:90px;
+    letter-spacing: -8px;
+  }
+
+
+  .bg1{
+    position: absolute;
+    width: 60%;
+    top: 10px;
+    right: 12px;
+    z-index: 0;
+    transform: translateY(0%) translateX(0%);
+  }
+
+  #hello{
+    position:absolute;
+    z-index:1;
+  }
+
+  .text-center{
+    text-align: center;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+
+
+  
 /*# sourceMappingURL=../../../scss */

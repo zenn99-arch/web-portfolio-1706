@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.min.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
 </head>
 
 <body>
@@ -34,13 +36,7 @@
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav ml-auto">
-
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+                   
                 </div>
             </nav>
             <!--end:Nav -->
@@ -48,25 +44,118 @@
     </div>
     <!--end:Navigation -->
     <main role="main">
+        
         <section class="intro">
             <div class="container">
                 <div class="row d-flex  align-items-start">
-                    <div class="col-md-11">
-                        <h1 class="display-3">The Art of Imagination.<br>Award-winning Design &amp; Craft Studio.</h1>
+                    <div><img src="./assets/img/bg1.png" alt="" data-speed="2" class="bg1"></div>
+                    <div class="col-md-11" id="hello">
+                        
+                        
+                        <h1 class="display-3">Hello! I am </h1><p class="title">Bimal Ray</d> <br><h1>Graphics designer &amp; Frontend devloper.</h1>
+                           
                     </div>
                 </div>
             </div>
+          
         </section>
+
+        
         <!--end:Intro -->
         <section class="space-md">
+
+            <!-- skills bar -->
+
+            
+
+
+            <section class="intro2" >
+            <div class="container">
+                <div class="row d-flex  align-items-start">
+                    <div class="col-md-11">
+                        <h1 class="skills">Skills</h1>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class=" skillset">
+
+				<div class="skill-lockup">
+					<span class="skill-name mb">Adobe Photoshop</span><span class="skill-status">85%</span>
+					<span class="skill-bar">
+						<span class="skill-level  communication"></span>
+					</span>
+				</div><!-- communication end -->
+
+				<div class="skill-lockup mr">
+					<span class="skill-name mb">Adobe Illustration</span><span class="skill-status">95%</span>
+					<span class="skill-bar">
+						<span class="skill-level planning"></span>
+					</span>
+				</div><!-- planning end -->
+
+				<div class="skill-lockup">
+					<span class="skill-name mb">Adobe Premiere Pro & After Effects</span><span class="skill-status">80%</span>
+					<span class="skill-bar">
+						<span class="skill-level learning"></span>
+					</span>
+				</div><!-- learning end -->
+
+				<div class="skill-lockup mr">
+					<span class="skill-name mb">Blender & Fusion 360 (3D animation)</span><span class="skill-status">75%</span>
+					<span class="skill-bar">
+						<span class="skill-level programming"></span>
+					</span>
+				</div><!-- programming end -->
+
+				<div class="skill-lockup">
+					<span class="skill-name mb">Html, Css & Java Script</span><span class="skill-status">80%</span>
+					<span class="skill-bar">
+						<span class="skill-level visual-design"></span>
+					</span>
+				</div><!-- visual-design end -->
+
+				<div class="skill-lockup mr">
+					<span class="skill-name mb">Python, Data Science & OpenCv</span><span class="skill-status">70%</span>
+					<span class="skill-bar">
+						<span class="skill-level ux-design"></span>
+					</span>
+				</div><!-- ux-design end -->	
+			</div><!-- skillset end -->
+
+            <div class="skill-lockup">
+                <span class="skill-name mb">React, React-Native, Three-js</span><span class="skill-status">85%</span>
+                <span class="skill-bar">
+                    <span class="skill-level visual-design1"></span>
+                </span>
+            </div><!-- visual-design end -->
+
+            <div class="skill-lockup mr">
+                <span class="skill-name mb">Adobe Xd, Figma (Ux)</span><span class="skill-status">75%</span>
+                <span class="skill-bar">
+                    <span class="skill-level ux-design1"></span>
+                </span>
+            </div><!-- ux-design end -->	
+        </div><
+
+            
+           
+        </section>
+
+
+
             <!-- portfolio -->
             <div id="portfolio" class="container">
                 <div id="portfolio-filters">
                     <ul id="filters" class="p-0">
-                        <li><a href="*" class="active">everything</a></li>
-                        <li><a href=".digital">Digital</a></li>
-                        <li><a href=".branding">Web Design</a></li>
-                        <li><a href=".campaigns">Marketing</a></li>
+                        <li><a href="*" class="active">Everything</a></li>
+                        <li><a href=".digital">Graphics</a></li>
+                        <li><a href=".branding">Video</a></li>
+                        <li><a href=".campaigns">3D render</a></li>
+                        <li><a href=".campaigns">Code</a></li>
                     </ul>
                 </div>
                 <div class="grid" data-cols="3" data-margin="0" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
@@ -208,9 +297,11 @@
             </div>
             <!--/.row-->
         </div>
+        
         <!--/.container-->
     </footer>
     <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
