@@ -12800,7 +12800,7 @@ footer a {
 #filters li a {
   font-size: 15px;
   font-weight: 600;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   margin: 8px 20px;
   padding-bottom: 10px;
   cursor: pointer;
@@ -13152,7 +13152,7 @@ Visual-Design Animation
 
   .intro2  {
     padding-top: 260px;
-    padding-bottom: 250px;
+    padding-bottom: 310px;
     padding-left: 300px;
     
     align-items: center;

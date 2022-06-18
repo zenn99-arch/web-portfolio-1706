@@ -17825,4 +17825,14 @@ $(document).ready(function(){
 		  layer.style.transform = `translateX(${x}px) translateY(${y}px)`
 	  })
   }
+
+//   document.querySelectorAll('a[href="#1"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
 //# sourceMappingURL=main.js.map

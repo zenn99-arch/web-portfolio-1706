@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Free minimal portfolio web site template,minmal portfolio,porfolio,bootstrap template,html template,photography " />
     <title>Creative Process</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.min.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
@@ -52,15 +53,25 @@
                     <div class="col-md-7">
                         <div class="project-sidebar">
                             <!-- Place your project images here -->
-                            <figure><img src="./assets/img/photo-1494475673543-6a6a27143fc8.jpg" alt="" class="img-fluid"></figure>
+                            <figure><img src="./assets/img/photo-1494475673543-6a6a27143fc8.jpg" alt="" id="1" class="img-fluid"></figure>
                             <figure><img src="./assets/img/photo-1558118720-fa5cdebe6b3a.jpg" alt="" class="img-fluid"></figure>
                             <figure><img src="./assets/img/photo-1558180702-95f1c3ae2ca3.jpg" alt="" class="img-fluid"></figure>
-                            <figure><img src="./assets/img/photo-1557941760-987c3f403d5a.jpg" alt="" class="img-fluid"> </figure>
+                            <figure><img src="./assets/img/photo-1557941760-987c3f403d5a.jpg" alt="" class="img-fluid1"> </figure>
                         </div>
                     </div>
                     <!-- end:col -->
                     <div class="col-md-5 pl-lg-5 pl-md-5">
                         <div class="sticky-top pt-5">
+                            <div id="portfolio" class="container">
+                                <div >
+                                    <ul id="filters" class="p-0">
+                                        
+                                        <li><a class="scrollLink" href="#1">Graphics</a></li>
+                                        <li><a class="scrollLink" href=".branding">Videos</a></li>
+                                        <li><a class="scrollLink" href=".campaigns">3D renders</a></li>
+                                        <li><a class="scrollLink" href=".web">Webs</a></li>
+                                    </ul>
+                                </div>
                             <h1>
                                 Product photography
                             </h1>
@@ -120,7 +131,18 @@
         </div>
         <!--/.container-->
     </footer>
+    <script>
+        $(document).ready(function() {
+            $("a.scrollLink").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                  }, 500);
+              });
+          });
+      </script>
     <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
